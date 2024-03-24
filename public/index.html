@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Acerto de viagem de motoristas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+
+            <header>
+                <div class="boxheader">
+                    <h1>
+                        Acerto de vigem motorista
+                    </h1>
+                    <p>
+                        Preencha o formulário abaixo com atenção
+                    </p>
+                </div>
+            </header>
+
+
+        <div class="my-form">
+        <form action="/submit" method="post" >
+
+            <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>Informações motorista</legend>
+                    </div>
+
+                    <div class="col-3">
+
+                        <div class="input-wrapper">
+                            <label for="reference">Mes referencia <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="reference" id="reference" >
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="" >
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="cpf">CPF (apenas numeros)</label>
+                            <input type="text" name="cpf" id="" >
+                        </div>
+
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="ctbc">Numero viagem | CTBC <span>(digite apenas numeros)</span></label>
+                        <input type="text" name="ctbc" id="ctbc" maxlength="11">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="tipoviagem">Tipo de viagem</label>
+                        <input type="text" name="tipoviagem" id="">
+                    </div>
+
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="unorigem">Origem</label>
+                            <input type="text" name="unorigem" id="">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="undest">Destino</label>
+                            <input type="text" name="undest" id="">
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="placa">Placa</label>
+                            <input type="text" name="placa" id="">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="duracao">Duração </label>
+                            <input type="text" name="duracao" id="">
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="ctrbdate">Data CTRB <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="ctrbdate" id="">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="iniciodate">Inicio viagem  <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="iniciodate" id="">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="returndata">Return viagem <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="returndata" id="">
+                        </div>
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Analise de consumo de combustivel<span>PREVISTO x REALIZADO</span></legend>
+                </div>
+
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="kminicial">KM Inicial</label>
+                        <input type="number" name="kminicial" id="">
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <label for="kmfinal">KM Final</label>
+                        <input type="number" name="kmfinal" id="">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="kmpercursso">KM Percorrido</label>
+                        <input type="number" name="kmpercursso" id="kmpercursso">
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="input-wrapper">
+                        <label for="dieselpervisto">Diesel previsto</label>
+                        <input type="number" name="dieselprevisto" id="">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="dieselrealizad">Diesel realizado</label>
+                        <input type="number" name="dieselrealizad" id="">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Produtividade</legend>
+    
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="pesoorigin">Peso Origem<span>Item 1</span></label>
+                            <input type="number" name="pesoorigin" id="">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="valororiginfrete">Valor da origem frete<span>Item 2</span></label>
+                            <input type="number" name="valororiginfrete" id="">
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="pesoretorno">Peso Retorno<span>Item 3</span></label>
+                            <input type="number" name="pesoretorno" id="">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="valorretornofrete">Valor do Retorno Frete<span>Item 4</span></label>
+                            <input type="number" name="valorretornofrete" id="">
+                        </div>                        
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="aproveitamento">Aproveitamento Origem %</label>
+                        <input type="number" name="aproveitamentoorigem" id="">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="aproveitamentoorig">Aproveitamento Retorno %</label>
+                        <input type="number" name="aproveitamentoretorno" id="">
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Normas</legend>
+    
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="marcacao">Marcação<span>Item 1 - Lei 13.103 Marcação - RH</span></label>
+                            <input type="text" name="marcacao" id="">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="jornada">Jornada<span>Item 2 - Lei 11.203 Jornada - RH</span></label>
+                            <input type="text" name="jornada" id="">
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="trafego">Excesso Velocidade<span>Item 3 - Trafego</span></label>
+                            <input type="text" name="trafego" id="">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="trafego2">Multa Transito<span>Item 4 - Trafego </span></label>
+                            <input type="text" name="trafego2" id="">
+                        </div>                      
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="totalconf">Total de não conformidade</label>
+                        <input type="number" name="totalconf" id="">
+                    </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Analise de viagem</legend>
+    
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="media">Media</label>
+                            <input type="text" name="media" id="">
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="norma">Norma</label>
+                            <input type="text" name="norma" id="">
+                        </div>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="tipoviageman">Tipo de viagem</label>
+                            <input type="text" name="tipoviageman" id="">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mediarealizada">Media realizada</label>
+                            <input type="number" name="mediarealizada" id="">
+                        </div>                      
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mediamax">Media maxima</label>
+                        <input type="number" name="mediamax" id="">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="saldometa">Saldo meta de consumo diesel</label>
+                        <input type="number" name="saldometa" id="">
+                    </div>
+            </fieldset>
+            
+            <button class="button" type="submit">Enviar</button>
+
+        </form>        
+    </div>
+    
+</div>
+</body>
+</html>
+
