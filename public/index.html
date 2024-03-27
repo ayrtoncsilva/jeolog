@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
     <title>Acerto de viagem de motoristas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js " defer></script>
 </head>
 <body>
     <div class="page">
@@ -25,7 +26,7 @@
 
 
         <div class="my-form">
-        <form action="/submit" method="post" >
+        <form id="form" action="/submit" method="post">
 
             <fieldset>
                     <div class="fieldset-wrapper">
@@ -36,7 +37,7 @@
 
                         <div class="input-wrapper">
                             <label for="reference">Mes referencia <span>(DD/MM/AAAA)</span></label>
-                            <input type="date" name="reference" id="reference" >
+                            <input type="month" name="reference" id="reference" required>
                         </div>
 
                         <div class="input-wrapper">
@@ -46,7 +47,7 @@
 
                         <div class="input-wrapper">
                             <label for="cpf">CPF (apenas numeros)</label>
-                            <input type="text" name="cpf" id="" >
+                            <input type="text" name="cpf" id="cpf" >
                         </div>
 
                     </div>
